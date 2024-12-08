@@ -8,6 +8,8 @@ class Mycars extends Component {
       { name: "Mercedes", color: "black", year: 2010 },
       { name: "Peugeot", color: "green", year: 2018 },
     ],
+
+    titre : 'Mon catalogue voitures  2 '
   };
 
 
@@ -28,7 +30,7 @@ class Mycars extends Component {
 
     return (
       <div>
-        <h1>{this.props.title}</h1>
+        <h1>{this.state.titre}</h1>
         <button onClick={this.addTenYears}>Age +10 ans</button>
         <Cars
           year={dateNow - this.state.voitures[0].year + " ans"}
