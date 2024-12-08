@@ -1,12 +1,12 @@
 import React from 'react'
 
-function Cars({children , color, year ,sortie}) { 
+function Cars({nom , color, year ,sortie}) { 
     const colorInfo = color ? (<p>couleur : {color} </p>) : (<p>couleur : Néant </p>) ;
     
-    if(children){
+    if(nom){
         return (
             <div className='cars'>
-                <p>Marque : {children} </p>
+                <p>Marque : {nom} </p>
                 <p>Age : {year} </p>
                 <p>Annee de sortie : {sortie} </p>
                 {colorInfo}
